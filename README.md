@@ -196,24 +196,6 @@ Options:
 - [ ] Cache local des résultats d'enrichissement
 - [ ] Mode daemon pour surveillance continue
 
-## 🤝 Contribution
-
-Ce projet est un outil d'apprentissage pour analyste SOC. N'hésitez pas à :
-- Proposer des améliorations
-- Signaler des bugs
-- Partager vos use cases
-
 ## 📝 License
 
 Projet éducatif - Libre d'utilisation
-
-## 👤 Auteur
-
-Créé dans le cadre d'un portfolio SOC pour démontrer :
-- Compétences en Python pour l'automatisation SOC
-- Compréhension des IOCs et de la threat intelligence
-- Capacité à créer des outils pratiques pour analyste
-
----
-
-**Note** : Ce script est conçu à des fins éducatives et de démonstration. Pour un usage en production, ajouter une gestion d'erreurs plus robuste, du logging, et respecter les politiques de sécurité de votre organisation.
