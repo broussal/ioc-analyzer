@@ -1,0 +1,78 @@
+THREAT INTELLIGENCE REPORT - 2024-02-04
+=========================================
+
+Incident Summary:
+Analyse d'incident de sécurité suite à la détection de fichiers suspects
+sur plusieurs postes utilisateurs. Investigation forensics en cours.
+
+CONTEXTE DE L'INCIDENT :
+------------------------
+Plusieurs utilisateurs ont téléchargé des fichiers suspects depuis des
+sites de phishing déguisés en sites légitimes.
+
+TRAFIC RÉSEAU LÉGITIME OBSERVÉ :
+---------------------------------
+Avant l'incident, trafic normal vers services publics :
+- 8.8.8.8 (Google Public DNS)
+- 8.8.4.4 (Google Public DNS secondaire)
+- 1.1.1.1 (Cloudflare DNS)
+- 1.0.0.1 (Cloudflare DNS secondaire)
+- 142.250.185.46 (google.com)
+- 13.107.42.14 (microsoft.com)
+- 104.16.132.229 (cloudflare.com)
+
+FICHIERS MALVEILLANTS IDENTIFIÉS :
+-----------------------------------
+
+1) update_flash.exe
+   Localisation: C:\Users\alice\Downloads\
+   MD5: db349b97c37d22f5ea1d1841e3c89eb4
+   SHA256: ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5babe8e080e41aa
+   Type: WannaCry Ransomware
+
+2) invoice_Q4.pdf.exe
+   Localisation: C:\Users\bob\Desktop\
+   SHA256: bf575ce1c9425bc44f5cabbc34366e0e92ef369db0a8b69942c5bdb1cca9b800
+   Type: Ryuk Ransomware
+
+3) document_important.doc.exe
+   Localisation: C:\Users\charlie\Downloads\
+   SHA256: c58f07f84d6aae485416683e5515b39bc39349e69bc14629440e693da23d6c4d
+   Type: Emotet Banking Trojan
+
+DOMAINES SUSPECTS CONTACTÉS :
+------------------------------
+- eteensblog[.]com # Domaine malveillant
+- palisek[.]cz # Domaine malveillant
+- mnminfrasolutions[.]com # Domaine malveillant
+- dropbox[.]com
+- filetransfer[.]io
+
+URLs MALVEILLANTES :
+--------------------
+- hxxp://www[.]eteensblog[.]com/2tgmnk/fJZIPCYV/
+- hxxp://www[.]palisek[.]cz/wp-includes/YtgJbWQNtJ/
+- hxxp://www[.]mnminfrasolutions[.]com/wp-admin/zeteXeJYC/
+- hxxp://172.105.11.15:8080/img/window/
+
+EMAIL SOURCE :
+--------------
+- attacker[at]tomswyers[.]com # Domaine malveillant
+
+RECOMMANDATIONS :
+-----------------
+✅ Infrastructure DNS légitime (Google, Cloudflare, Microsoft) : NORMALE
+❌ 3 fichiers malware détectés (WannaCry, Ryuk, Emotet)
+❌ 4 domaines suspects identifiés
+❌ 2 URLs malveillantes détectées
+❌ 1 email suspect
+
+Actions immédiates :
+1. Isoler les 3 postes compromis du réseau
+2. Quarantiner les 3 fichiers malware
+3. Bloquer les 4 domaines au firewall
+4. Filtrer l'email source
+5. Scan complet de tous les postes du réseau
+6. Restauration depuis backup si chiffrement détecté
+
+Contact: soc@company.com

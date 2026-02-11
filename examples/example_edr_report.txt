@@ -1,0 +1,29 @@
+EDR ALERT - MALWARE DETECTED
+=============================
+Time: 2024-02-11 16:42:33
+Host: LAPTOP-FINANCE-07
+User: sarah.mitchell
+
+THREAT DETAILS
+--------------
+File: payment_confirmation.pdf.exe
+Path: C:\Users\sarah.mitchell\Downloads\
+MD5: beee6b598d006a6f6fc93f6b8764715f
+SHA256: b7209653e226c798ca29343912cf21f22b7deea4876a8cadb88803541988e941
+Classification: Banking Trojan (TrickBot variant)
+Status: QUARANTINED
+
+NETWORK ACTIVITY
+----------------
+Outbound connections blocked:
+- 111.38.106.19:443
+- svclsc.com
+
+ACTIONS TAKEN
+-------------
+✓ Process terminated (PID: 8472)
+✓ File quarantined
+✓ Host isolated
+✓ SOC notified
+
+END OF REPORT

@@ -1,0 +1,2 @@
+# Ce fichier permet de garder le dossier outputs/ dans Git
+# Les fichiers .html et .json générés sont ignorés par .gitignore

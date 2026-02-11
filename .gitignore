@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Rapports générés (dans outputs/)
+outputs/*.json
+outputs/*.html
+
+# Mais garder les exemples de structure
+!outputs/.gitkeep
+
+# Clés API (sécurité)
+config.py
+.env
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
