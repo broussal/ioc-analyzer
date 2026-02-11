@@ -53,7 +53,7 @@ URLs MALVEILLANTES :
 - hxxp://www[.]eteensblog[.]com/2tgmnk/fJZIPCYV/
 - hxxp://www[.]palisek[.]cz/wp-includes/YtgJbWQNtJ/
 - hxxp://www[.]mnminfrasolutions[.]com/wp-admin/zeteXeJYC/
-- hxxp://172.105.11.15:8080/img/window/
+- hxxp://172[.]105[.]11[.]15[:]8080/img/window/
 
 EMAIL SOURCE :
 --------------

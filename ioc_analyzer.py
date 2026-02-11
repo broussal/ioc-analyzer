@@ -96,6 +96,7 @@ class IOCExtractor:
         
         # IPs, domaines, emails defangés
         text = re.sub(r'\[\.\]', '.', text)
+        text = re.sub(r'\[\:\]', ':', text)
         text = re.sub(r'\[dot\]', '.', text, flags=re.IGNORECASE)
         text = re.sub(r'\[@\]', '@', text)
         text = re.sub(r'\[at\]', '@', text, flags=re.IGNORECASE)
